@@ -1,0 +1,3 @@
+rootProject.name = 'mediscreen'
+include 'userdb'
+include 'doctordb'

@@ -1,2 +1,9 @@
-package com.mediscreen.userdb.repository;public class UserRepository {
+package com.mediscreen.userdb.repository;
+
+import com.mediscreen.userdb.model.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface UserRepository extends JpaRepository<User, Integer> {
 }

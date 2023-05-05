@@ -1,0 +1,29 @@
+# Use root/example as user/password credentials
+version: '3.1'
+
+services:
+  mediscreen-userdb-db:
+    image: mysql:8.0.27
+    container_name: mediscreen-userdb-db
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: userdb
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: admin
+    ports:
+      - "3306:3306"
+
+  mediscreen-userdb-app:
+    build:
+      context: ../
+      dockerfile: DockerFile
+    container_name: mediscreen-userdb-app
+    ports:
+      - "8081:8081"
+    environment:
+      - DB_SERVER=mediscreen-userdb-db
+      - SECRET=root
+    links:
+      - mediscreen-userdb-db

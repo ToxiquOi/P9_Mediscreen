@@ -1,4 +1,4 @@
-package com.mediscreen.userdb.model;
+package com.mediscreen.userdb.domain;
 
 import lombok.Getter;
 

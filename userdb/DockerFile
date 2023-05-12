@@ -1,8 +1,13 @@
 FROM eclipse-temurin:17-jdk-jammy
 
-WORKDIR /app
-COPY build/libs/userdb-0.0.1-SNAPSHOT.jar /app/userdb-0.0.1-SNAPSHOT.jar
 
-EXPOSE 8080/tcp
+WORKDIR /userdb
+COPY . /userdb/
+USER root
+CMD ["chown", "-R", "/userdb"]
 
-CMD ["java", "-jar", "userdb-0.0.1-SNAPSHOT.jar"]
+RUN chmod +X /userdb/gradlew
+CMD ["/userdb/gradlew", "clean", "build", "jar"]
+
+EXPOSE 8081/tcp
+CMD ["java", "-jar", "/userdb/build/libs/userdb-0.0.1-SNAPSHOT.jar"]

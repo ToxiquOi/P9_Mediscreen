@@ -10,6 +10,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/doctordb" />
+            <option value="$PROJECT_DIR$/mediscreen-ui" />
             <option value="$PROJECT_DIR$/userdb" />
           </set>
         </option>

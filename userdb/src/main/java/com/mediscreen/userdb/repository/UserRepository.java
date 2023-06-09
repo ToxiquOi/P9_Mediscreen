@@ -1,6 +1,6 @@
 package com.mediscreen.userdb.repository;
 
-import com.mediscreen.userdb.model.User;
+import com.mediscreen.userdb.domain.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

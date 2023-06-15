@@ -19,10 +19,6 @@ configurations {
     }
 }
 
-ext {
-    set('vaadinVersion', "24.0.5")
-}
-
 buildscript {
     repositories {
         mavenCentral()

@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/doctordb/com.mediscreen.mediscreen.doctordb.main.iml" filepath="$PROJECT_DIR$/.idea/modules/doctordb/com.mediscreen.mediscreen.doctordb.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/userdb/com.mediscreen.mediscreen.userdb.main.iml" filepath="$PROJECT_DIR$/.idea/modules/userdb/com.mediscreen.mediscreen.userdb.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/doctordb/mediscreen.doctordb.main.iml" filepath="$PROJECT_DIR$/.idea/modules/doctordb/mediscreen.doctordb.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/mediscreen-ui/mediscreen.mediscreen-ui.main.iml" filepath="$PROJECT_DIR$/.idea/modules/mediscreen-ui/mediscreen.mediscreen-ui.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/userdb/mediscreen.userdb.main.iml" filepath="$PROJECT_DIR$/.idea/modules/userdb/mediscreen.userdb.main.iml" />

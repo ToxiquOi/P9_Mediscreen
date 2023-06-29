@@ -1,6 +1,7 @@
 package com.mediscreen.ui.view;
 
 import com.mediscreen.ui.domain.Patient;
+import com.mediscreen.ui.service.DoctorDBService;
 import com.mediscreen.ui.service.PatientDBService;
 import com.mediscreen.ui.view.component.PatientForm;
 import com.vaadin.flow.component.ClickEvent;
@@ -16,16 +17,19 @@ import org.springframework.beans.factory.annotation.Autowired;
 @PageTitle("Mediscreen | Patients")
 @Route(value = "patients", layout = MainView.class)
 public class PatientListView extends VerticalLayout {
-    private Grid<Patient> grid = new Grid<>();
+    private final Grid<Patient> grid = new Grid<>();
     private PatientForm form;
 
     private final Button createUserButton = new Button();
 
     private final PatientDBService patientService;
+    private final DoctorDBService doctorDBService;
 
     @Autowired
-    public PatientListView(PatientDBService patientService) {
+    public PatientListView(PatientDBService patientService, DoctorDBService doctorDBService) {
         this.patientService = patientService;
+        this.doctorDBService = doctorDBService;
+
         Button getAllBtn = new Button("Get all patients");
         getAllBtn.addClickListener(this::onAllPatientClick);
 
@@ -76,9 +80,7 @@ public class PatientListView extends VerticalLayout {
         grid.addColumn(Patient::getFirstname).setHeader("Firstname");
 
         grid.setSelectionMode(Grid.SelectionMode.SINGLE);
-        grid.asSingleSelect().addValueChangeListener(event -> {
-            editContact(event.getValue());
-        });
+        grid.asSingleSelect().addValueChangeListener(event -> editContact(event.getValue()));
 
         return grid;
     }
@@ -120,7 +122,7 @@ public class PatientListView extends VerticalLayout {
     }
 
     private PatientForm getPatientForm() {
-        form = new PatientForm();
+        form = new PatientForm(doctorDBService);
         form.setMaxWidth("25em");
         form.setFieldFullWidth();
         form.setVisible(false);
@@ -129,7 +131,6 @@ public class PatientListView extends VerticalLayout {
         form.addListener(PatientForm.SaveEvent.class,
                 saveEvent -> {
                     Patient p = saveEvent.getSource().getPatient();
-
                     patientService.savePatient(p);
                     updateGrid();
                 }
@@ -143,9 +144,7 @@ public class PatientListView extends VerticalLayout {
         );
 
         form.addListener(PatientForm.CloseEvent.class,
-                closeEvent -> {
-                    closeEditor();
-                }
+                closeEvent -> closeEditor()
         );
 
         return form;

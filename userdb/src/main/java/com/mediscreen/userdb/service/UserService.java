@@ -39,7 +39,7 @@ public class UserService {
         User user = new User();
         user.setFamily(family);
         user.setDob(new Date(Integer.parseInt(birthdate[0]), Integer.parseInt(birthdate[1])-1, Integer.parseInt(birthdate[2])));
-        user.setSex(sex);
+        user.setSex(sex.getValue());
         user.setAddress(address);
         user.setPhone(phone);
         return userRepository.saveAndFlush(user);
@@ -58,5 +58,12 @@ public class UserService {
             return false;
         }
 
+    }
+
+    @SneakyThrows
+    public User getUserByFamilyName(String familyName) {
+        var optUser = userRepository.findUserByFamily(familyName);
+        if (optUser.isEmpty()) throw new UserNotFoundException("User with family name:"+ familyName + " not found");
+        return optUser.get();
     }
 }

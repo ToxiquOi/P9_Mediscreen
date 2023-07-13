@@ -9,18 +9,10 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/analytics" />
             <option value="$PROJECT_DIR$/doctordb" />
             <option value="$PROJECT_DIR$/mediscreen-ui" />
             <option value="$PROJECT_DIR$/userdb" />
-          </set>
-        </option>
-      </GradleProjectSettings>
-      <GradleProjectSettings>
-        <option name="distributionType" value="DEFAULT_WRAPPED" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/analytics" />
-        <option name="modules">
-          <set>
-            <option value="$PROJECT_DIR$/analytics" />
           </set>
         </option>
       </GradleProjectSettings>

@@ -44,7 +44,7 @@ public class DoctorDBService {
                 .addParameters(nameValuePairs)
                 .build();
 
-        var res = wrs.doPostResquest(uri, null, Data.class);
+        var res = wrs.doPostRequest(uri, null, Data.class);
         if (res.isEmpty())
             throw new HistorySaveException();
 

@@ -33,6 +33,11 @@ public class UserController {
         return ResponseEntity.ok(userService.getUser(id));
     }
 
+    @GetMapping("/familyName")
+    public ResponseEntity<User> getByFamilyName(@RequestParam String familyName) {
+        return ResponseEntity.ok(userService.getUserByFamilyName(familyName));
+    }
+
     @PutMapping("/save")
     public ResponseEntity<User> addUser(@RequestBody User user) {
         return ResponseEntity.ok(userService.addUser(user));

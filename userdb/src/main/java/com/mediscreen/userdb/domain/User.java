@@ -27,7 +27,7 @@ public class User {
 
     private Date dob;
 
-    private ESex sex;
+    private String sex;
 
     private String address;
 

@@ -35,28 +35,24 @@ public class WebRequestService {
      * @return An optional of type T
      * @param <T> cData
      */
-    public <T> Optional<T> doPostResquest(String uri, Object data, Class<T> cData) {
-        return doPostResquest(URI.create(uri), data, cData);
-    }
-
-    public <T> Optional<T> doPostResquest(URI uri, Object data, Class<T> cData) {
+    public <T> Optional<T> doPostRequest(URI uri, Object data, Class<T> cData) {
         HttpPost request = new HttpPost(uri);
         return doResquestWithData(request, data, cData);
     }
 
     /**
-     * Perform a basic HTTP Post request on specified URI
+     * Perform a basic HTTP Put request on specified URI
      * @param uri request endpoint
      * @param data body of the request
      * @param cData The type of object returned by request
      * @return An optional of type T
      * @param <T> cData
      */
-    public <T> Optional<T> doPutResquest(String uri, Object data, Class<T> cData) {
-        return doPutResquest(URI.create(uri), data, cData);
+    public <T> Optional<T> doPutRequest(String uri, Object data, Class<T> cData) {
+        return doPutRequest(URI.create(uri), data, cData);
     }
 
-    public <T> Optional<T> doPutResquest(URI uri, Object data, Class<T> cData) {
+    public <T> Optional<T> doPutRequest(URI uri, Object data, Class<T> cData) {
         HttpPut request = new HttpPut(uri);
         return doResquestWithData(request, data, cData);
     }
@@ -73,11 +69,6 @@ public class WebRequestService {
         return executeRequest(request, responseType);
     }
 
-    public <T> Optional<T> doGetRequest(URI uri, Class<T> responseType) {
-        HttpGet request = new HttpGet(uri);
-        return executeRequest(request, responseType);
-    }
-
 
 
     /**
@@ -86,7 +77,7 @@ public class WebRequestService {
      * @param request , The request to execute
      * @param tClass , The object type of request result
      * @return result of request
-     * @param <T>
+     * @param <T> tClass type
      */
     public <T> Optional<T> executeRequest(HttpUriRequestBase request, Class<T> tClass) {
         T res = null;

@@ -1,4 +1,5 @@
 rootProject.name = 'mediscreen'
 include 'userdb'
 include 'doctordb'
+include 'analytics'
 include 'mediscreen-ui'

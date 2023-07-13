@@ -41,7 +41,7 @@ public class PatientDBService {
 
     @SneakyThrows
     public Patient savePatient(Patient p) {
-        var res = wrs.doPutResquest(SERVICE_URI+"save", p, Patient.class);
+        var res = wrs.doPutRequest(SERVICE_URI+"save", p, Patient.class);
         if (res.isEmpty())
             throw new PatientSaveException();
         return res.get();

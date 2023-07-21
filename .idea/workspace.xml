@@ -124,7 +124,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.PatientDataServiceTest">
+  <component name="RunManager" selected="Gradle.UserServiceTest">
     <configuration name="DoctordbApplicationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -309,10 +309,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.UserServiceTest" />
         <item itemvalue="Gradle.PatientDataServiceTest" />
         <item itemvalue="Gradle.PatientDataServiceTest.getPatientDataTest3" />
         <item itemvalue="Gradle.DoctordbApplicationTests" />
-        <item itemvalue="Gradle.UserServiceTest" />
         <item itemvalue="Gradle.P9_Mediscreen [build]" />
       </list>
     </recent_temporary>

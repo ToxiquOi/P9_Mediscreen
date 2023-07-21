@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09cd5ea1-de94-4d27-8a2f-5353ab42e0d9" name="Changes" comment="Modify workflow, make gradlew executable">
+    <list default="true" id="09cd5ea1-de94-4d27-8a2f-5353ab42e0d9" name="Changes" comment="Modify workflow, make step for gradlew executable">
       <change beforePath="$PROJECT_DIR$/.github/workflows/build.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/build.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -344,7 +344,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689927330783</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Modify workflow, make step for gradlew executable">
+      <created>1689927523468</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1689927523468</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -356,7 +363,8 @@
     <MESSAGE value="Add analytics app base" />
     <MESSAGE value="Finalized Analytics app" />
     <MESSAGE value="Modify workflow, make gradlew executable" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modify workflow, make gradlew executable" />
+    <MESSAGE value="Modify workflow, make step for gradlew executable" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modify workflow, make step for gradlew executable" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

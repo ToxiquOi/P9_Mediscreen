@@ -6,5 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface PatientDataRepository extends MongoRepository<PatientData, Integer> {
-
+    void deleteAll();
 }

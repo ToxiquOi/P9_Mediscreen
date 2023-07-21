@@ -15,7 +15,7 @@ jobs:
     services:
       mediscreen-userdb-db:
         image: mysql:8.0.27
-        environment:
+        env:
           MYSQL_ROOT_PASSWORD: root
           MYSQL_DATABASE: userdb
           MYSQL_USER: admin

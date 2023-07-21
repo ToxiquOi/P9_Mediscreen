@@ -15,7 +15,6 @@ jobs:
     services:
       mediscreen-userdb-db:
         image: mysql:8.0.27
-        command: --default-authentication-plugin=mysql_native_password
         restart: always
         environment:
           MYSQL_ROOT_PASSWORD: root

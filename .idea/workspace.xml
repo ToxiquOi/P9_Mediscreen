@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09cd5ea1-de94-4d27-8a2f-5353ab42e0d9" name="Changes" comment="fix configuration">
+    <list default="true" id="09cd5ea1-de94-4d27-8a2f-5353ab42e0d9" name="Changes" comment="Add mysql service in workflow">
       <change beforePath="$PROJECT_DIR$/.github/workflows/build.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/build.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -394,7 +394,21 @@
       <option name="project" value="LOCAL" />
       <updated>1689938280542</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="JDK 11 in workflows">
+      <created>1689939844253</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1689939844253</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Add mysql service in workflow">
+      <created>1689940097210</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1689940097210</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -409,7 +423,9 @@
     <MESSAGE value="Modify workflow, make step for gradlew executable" />
     <MESSAGE value="Grant execute permission to Gradle wrapper" />
     <MESSAGE value="fix configuration" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix configuration" />
+    <MESSAGE value="JDK 11 in workflows" />
+    <MESSAGE value="Add mysql service in workflow" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add mysql service in workflow" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

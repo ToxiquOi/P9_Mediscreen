@@ -5,38 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09cd5ea1-de94-4d27-8a2f-5353ab42e0d9" name="Changes" comment="Finalized Analytics app">
-      <change afterPath="$PROJECT_DIR$/.idea/modules/analytics/mediscreen.analytics.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analytics/DockerFile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analytics/src/main/java/com/mediscreen/analytics/controller/AnalyticsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analytics/src/main/java/com/mediscreen/analytics/domain/DiabeteFactor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analytics/src/main/java/com/mediscreen/analytics/domain/DiabeteReport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analytics/src/main/java/com/mediscreen/analytics/domain/DiabeteState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analytics/src/main/java/com/mediscreen/analytics/service/ReportService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mediscreen-ui/DockerFile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analytics/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/analytics/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analytics/src/main/java/com/mediscreen/analytics/AnalyticsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/analytics/src/main/java/com/mediscreen/analytics/AnalyticsApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analytics/src/main/java/com/mediscreen/analytics/model/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/analytics/src/main/java/com/mediscreen/analytics/model/Patient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analytics/src/main/java/com/mediscreen/analytics/service/DoctorDBService.java" beforeDir="false" afterPath="$PROJECT_DIR$/analytics/src/main/java/com/mediscreen/analytics/service/DoctorDBService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analytics/DockerFile" beforeDir="false" afterPath="$PROJECT_DIR$/analytics/DockerFile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analytics/src/main/java/com/mediscreen/analytics/controller/AnalyticsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/analytics/src/main/java/com/mediscreen/analytics/controller/AnalyticsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analytics/src/main/java/com/mediscreen/analytics/exception/HistorySaveException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/analytics/src/main/java/com/mediscreen/analytics/exception/PatientNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/analytics/src/main/java/com/mediscreen/analytics/exception/PatientNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analytics/src/main/java/com/mediscreen/analytics/exception/PatientSaveException.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/analytics/src/main/java/com/mediscreen/analytics/service/PatientDBService.java" beforeDir="false" afterPath="$PROJECT_DIR$/analytics/src/main/java/com/mediscreen/analytics/service/PatientDBService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analytics/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/analytics/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediscreen-ui/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen-ui/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doctordb/DockerFile" beforeDir="false" afterPath="$PROJECT_DIR$/doctordb/DockerFile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doctordb/src/main/java/com/mediscreen/doctordb/controller/PatientDataController.java" beforeDir="false" afterPath="$PROJECT_DIR$/doctordb/src/main/java/com/mediscreen/doctordb/controller/PatientDataController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doctordb/src/main/java/com/mediscreen/doctordb/exception/DataNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/doctordb/src/main/java/com/mediscreen/doctordb/exception/DataNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doctordb/src/main/java/com/mediscreen/doctordb/service/PatientDataService.java" beforeDir="false" afterPath="$PROJECT_DIR$/doctordb/src/main/java/com/mediscreen/doctordb/service/PatientDataService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mediscreen-ui/DockerFile" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen-ui/DockerFile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mediscreen-ui/src/main/java/com/mediscreen/ui/exception/HistorySaveException.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen-ui/src/main/java/com/mediscreen/ui/exception/HistorySaveException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mediscreen-ui/src/main/java/com/mediscreen/ui/exception/PatientNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen-ui/src/main/java/com/mediscreen/ui/exception/PatientNotFoundException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mediscreen-ui/src/main/java/com/mediscreen/ui/service/DoctorDBService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen-ui/src/main/java/com/mediscreen/ui/service/DoctorDBService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mediscreen-ui/src/main/java/com/mediscreen/ui/service/PatientDBService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen-ui/src/main/java/com/mediscreen/ui/service/PatientDBService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediscreen-ui/src/main/java/com/mediscreen/ui/service/WebRequestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen-ui/src/main/java/com/mediscreen/ui/service/WebRequestService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediscreen-ui/src/main/java/com/mediscreen/ui/view/component/AbstractUserForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen-ui/src/main/java/com/mediscreen/ui/view/component/AbstractUserForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediscreen-ui/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen-ui/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdb/src/main/java/com/mediscreen/userdb/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/userdb/src/main/java/com/mediscreen/userdb/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdb/src/main/java/com/mediscreen/userdb/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/userdb/src/main/java/com/mediscreen/userdb/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdb/src/main/java/com/mediscreen/userdb/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/userdb/src/main/java/com/mediscreen/userdb/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdb/src/main/java/com/mediscreen/userdb/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/userdb/src/main/java/com/mediscreen/userdb/service/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,33 +84,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "corretto-17",
-    "last_opened_file_path": "D:/Openclassroom/Java/P9_mediscreen/P9_Mediscreen/analytics",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "spring.configuration.checksum": "b8be9e8d1ff8b1ab585977e0160aed10",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Openclassroom/Java/P9_mediscreen/P9_Mediscreen/analytics&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;b8be9e8d1ff8b1ab585977e0160aed10&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mongo",
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mongo&quot;,
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.mediscreen.doctordb.exception" />
@@ -148,49 +133,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.AnalyticsApplication (1)">
-    <configuration name="P9_Mediscreen [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="build" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="P9_Mediscreen:doctordb [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/doctordb" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="build" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Docker.docker/compose.yml.mediscreen-ui-app: Compose Deployment">
     <configuration name="AnalyticsApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="mediscreen.analytics.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.mediscreen.analytics.AnalyticsApplication" />
@@ -235,23 +178,72 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="docker/compose.yml.mediscreen-doctordb-db: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+    <configuration name="docker/compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker/compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker/compose.yml.mediscreen-analytics-app: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
           <option name="services">
             <list>
-              <option value="mediscreen-doctordb-db" />
+              <option value="mediscreen-analytics-app" />
             </list>
           </option>
-          <option name="sourceFilePath" value="doctordb/docker/compose.yml" />
+          <option name="sourceFilePath" value="docker/compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker/compose.yml.mediscreen-doctordb-app: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="mediscreen-doctordb-app" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker/compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker/compose.yml.mediscreen-ui-app: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="mediscreen-ui-app" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker/compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker/compose.yml.mediscreen-userdb-app: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="mediscreen-userdb-app" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker/compose.yml" />
         </settings>
       </deployment>
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Docker.docker/compose.yml.mediscreen-doctordb-db: Compose Deployment" />
-      <item itemvalue="Gradle.P9_Mediscreen [build]" />
-      <item itemvalue="Gradle.P9_Mediscreen:doctordb [build]" />
+      <item itemvalue="Docker.docker/compose.yml.mediscreen-analytics-app: Compose Deployment" />
+      <item itemvalue="Docker.docker/compose.yml.mediscreen-doctordb-app: Compose Deployment" />
+      <item itemvalue="Docker.docker/compose.yml.mediscreen-ui-app: Compose Deployment" />
+      <item itemvalue="Docker.docker/compose.yml.mediscreen-userdb-app: Compose Deployment" />
+      <item itemvalue="Docker.docker/compose.yml: Compose Deployment" />
       <item itemvalue="Spring Boot.AnalyticsApplication" />
       <item itemvalue="Spring Boot.AnalyticsApplication (1)" />
       <item itemvalue="Spring Boot.DoctordbApplication" />
@@ -260,9 +252,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.P9_Mediscreen [build]" />
-        <item itemvalue="Docker.docker/compose.yml.mediscreen-doctordb-db: Compose Deployment" />
-        <item itemvalue="Gradle.P9_Mediscreen:doctordb [build]" />
+        <item itemvalue="Docker.docker/compose.yml.mediscreen-ui-app: Compose Deployment" />
+        <item itemvalue="Docker.docker/compose.yml.mediscreen-analytics-app: Compose Deployment" />
+        <item itemvalue="Docker.docker/compose.yml.mediscreen-userdb-app: Compose Deployment" />
+        <item itemvalue="Docker.docker/compose.yml.mediscreen-doctordb-app: Compose Deployment" />
+        <item itemvalue="Docker.docker/compose.yml: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -281,7 +275,9 @@
       <workItem from="1686914615117" duration="134000" />
       <workItem from="1688025466524" duration="16200000" />
       <workItem from="1688721515485" duration="7462000" />
-      <workItem from="1689230834539" duration="14147000" />
+      <workItem from="1689230834539" duration="14804000" />
+      <workItem from="1689253825273" duration="4830000" />
+      <workItem from="1689922734348" duration="866000" />
     </task>
     <task id="LOCAL-00001" summary="Added REST api in doctorDb service">
       <created>1686824916729</created>
@@ -304,7 +300,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688041402026</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Finalized Analytics app">
+      <created>1689248605560</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1689248605560</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

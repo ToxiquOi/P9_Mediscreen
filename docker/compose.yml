@@ -72,7 +72,7 @@ services:
       dockerfile: DockerFile
     container_name: mediscreen-analytics-app
     ports:
-      - "8080:8080"
+      - "8083:8083"
     environment:
       - DOCTOR_SERVICE=mediscreen-doctordb-app
       - PATIENT_SERVICE=mediscreen-userdb-app

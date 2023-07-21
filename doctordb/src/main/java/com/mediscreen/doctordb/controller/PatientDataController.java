@@ -1,9 +1,11 @@
 package com.mediscreen.doctordb.controller;
 
+import com.mediscreen.doctordb.exception.DataNotFoundException;
 import com.mediscreen.doctordb.model.PatientData;
 import com.mediscreen.doctordb.service.PatientDataService;
 import lombok.SneakyThrows;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -27,5 +29,10 @@ public class PatientDataController {
     @PostMapping("/add")
     public ResponseEntity<PatientData> addHistory(@RequestParam int patId, @RequestParam String e) {
         return ResponseEntity.ok(dataService.addHistory(patId,e));
+    }
+
+    @ExceptionHandler({DataNotFoundException.class})
+    public ResponseEntity<String> dataNotFoundExceptionHandler(DataNotFoundException e) {
+        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(e.getMessage());
     }
 }

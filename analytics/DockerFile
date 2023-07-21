@@ -6,8 +6,8 @@ COPY . /analytics/
 USER root
 CMD ["chown", "-R", "/analytics"]
 
-RUN chmod +X /userdb/gradlew
+RUN chmod +X /analytics/gradlew
 CMD ["/analytics/gradlew", "clean", "build", "jar"]
 
 EXPOSE 8081/tcp
-CMD ["java", "-jar", "/userdb/build/libs/analytics-0.0.1-SNAPSHOT.jar"]
+CMD ["java", "-jar", "/analytics/build/libs/analytics-0.0.1-SNAPSHOT.jar"]

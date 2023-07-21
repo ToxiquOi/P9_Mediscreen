@@ -37,7 +37,7 @@ public class PatientDataService {
     public PatientData getPatientDataById(int id) throws DataNotFoundException {
         var optData = dataRepository.findById(id);
         if(optData.isEmpty()) {
-            throw new DataNotFoundException();
+            throw new DataNotFoundException("History of patient with id: " + id + " not exist");
         }
 
         return optData.get();

@@ -10,4 +10,4 @@ RUN chmod +X /mediscreen-ui/gradlew
 CMD ["/mediscreen-ui/gradlew", "clean", "build", "jar"]
 
 EXPOSE 8081/tcp
-CMD ["java", "-jar", "/userdb/build/libs/mediscreen-ui-0.0.1-SNAPSHOT.jar"]
+CMD ["java", "-jar", "/mediscreen/build/libs/mediscreen-ui-0.0.1-SNAPSHOT.jar"]

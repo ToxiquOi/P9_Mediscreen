@@ -46,7 +46,7 @@ public class DoctorDBService {
 
         var res = wrs.doPostRequest(uri, null, Data.class);
         if (res.isEmpty())
-            throw new HistorySaveException();
+            throw new HistorySaveException("History not added");
 
         return res.get().getHistory();
     }

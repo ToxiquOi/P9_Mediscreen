@@ -28,7 +28,7 @@ public class PatientDBService {
     public Patient getPatientById(int id) {
         var res = wrs.doGetRequest(SERVICE_URI+id, Patient.class);
         if(res.isEmpty())
-            throw new PatientNotFoundException();
+            throw new PatientNotFoundException("Patient with id: " + id + " not exist");
         var patient = res.get();
         patient.setHistory(ddbservice.getHistoryById(patient.getId()));
         return res.get();

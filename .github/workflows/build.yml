@@ -17,11 +17,18 @@ jobs:
         image: mysql:8.0.27
         env:
           MYSQL_ROOT_PASSWORD: root
-          MYSQL_DATABASE: userdb
+          MYSQL_DATABASE: userdb-test
           MYSQL_USER: admin
           MYSQL_PASSWORD: admin
         ports:
           - "3306:3306"
+      mediscreen-doctordb-db:
+        image: mongo
+        env:
+          MONGO_INITDB_ROOT_USERNAME: root
+          MONGO_INITDB_ROOT_PASSWORD: root
+        ports:
+          - "27017:27017"
 
     steps:
       - uses: actions/checkout@v3

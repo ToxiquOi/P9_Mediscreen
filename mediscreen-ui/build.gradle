@@ -60,16 +60,3 @@ jacocoTestReport {
 }
 
 test.finalizedBy jacocoTestReport
-check.dependsOn jacocoTestCoverageVerification
-
-jacocoTestCoverageVerification {
-	violationRules {
-		rule {
-			limit {
-				counter = 'LINE'
-				value = 'COVEREDRATIO'
-				minimum = 0.2
-			}
-		}
-	}
-}

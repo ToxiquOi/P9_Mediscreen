@@ -64,6 +64,6 @@ public class UserService {
     public User getUserByFamilyName(String familyName) {
         var optUser = userRepository.findUserByFamily(familyName);
         if (optUser.isEmpty()) throw new UserNotFoundException("User with family name:"+ familyName + " not found");
-        return optUser.get();
+        return optUser.get(0);
     }
 }

@@ -4,22 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09cd5ea1-de94-4d27-8a2f-5353ab42e0d9" name="Changes" comment="Grant execute permission to Gradle wrapper">
-      <change afterPath="$PROJECT_DIR$/userdb/src/test/java/com/mediscreen/userdb/UserDbApplicationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/userdb/src/test/java/com/mediscreen/userdb/UserServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/userdb/src/test/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="09cd5ea1-de94-4d27-8a2f-5353ab42e0d9" name="Changes" comment="fix configuration">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/build.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/build.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analytics/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/analytics/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analytics/src/main/java/com/mediscreen/analytics/service/ReportService.java" beforeDir="false" afterPath="$PROJECT_DIR$/analytics/src/main/java/com/mediscreen/analytics/service/ReportService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doctordb/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/doctordb/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediscreen-ui/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen-ui/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdb/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/userdb/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +133,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.P9_Mediscreen [build]">
+  <component name="RunManager" selected="Gradle.Tests in 'mediscreen.userdb.test'">
     <configuration name="P9_Mediscreen [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -215,29 +202,6 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="UserServiceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":userdb:test" />
-            <option value="--tests" />
-            <option value="&quot;com.mediscreen.userdb.UserServiceTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <configuration name="UserServiceTest.testCreateUser" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -260,6 +224,14 @@
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
+    </configuration>
+    <configuration name="All in mediscreen" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mediscreen" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="analytics" />
@@ -319,11 +291,11 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Gradle.UserServiceTest" />
       <item itemvalue="Gradle.UserServiceTest.testCreateUser" />
       <item itemvalue="Gradle.P9_Mediscreen [test]" />
       <item itemvalue="Gradle.Tests in 'mediscreen.userdb.test'" />
       <item itemvalue="Gradle.P9_Mediscreen [build]" />
+      <item itemvalue="JUnit.All in mediscreen" />
       <item itemvalue="Spring Boot.AnalyticsApplication" />
       <item itemvalue="Spring Boot.AnalyticsApplication (1)" />
       <item itemvalue="Spring Boot.DoctordbApplication" />
@@ -332,11 +304,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Tests in 'mediscreen.userdb.test'" />
+        <item itemvalue="JUnit.All in mediscreen" />
         <item itemvalue="Gradle.P9_Mediscreen [build]" />
         <item itemvalue="Gradle.P9_Mediscreen [test]" />
         <item itemvalue="Gradle.UserServiceTest.testCreateUser" />
-        <item itemvalue="Gradle.Tests in 'mediscreen.userdb.test'" />
-        <item itemvalue="Gradle.UserServiceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -415,7 +387,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689928376102</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="fix configuration">
+      <created>1689938280542</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1689938280542</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -429,7 +408,8 @@
     <MESSAGE value="Modify workflow, make gradlew executable" />
     <MESSAGE value="Modify workflow, make step for gradlew executable" />
     <MESSAGE value="Grant execute permission to Gradle wrapper" />
-    <option name="LAST_COMMIT_MESSAGE" value="Grant execute permission to Gradle wrapper" />
+    <MESSAGE value="fix configuration" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix configuration" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

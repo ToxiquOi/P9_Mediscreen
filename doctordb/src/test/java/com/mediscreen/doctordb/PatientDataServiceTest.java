@@ -20,8 +20,13 @@ public class PatientDataServiceTest {
 
     @Test
     public void getPatientDataTest3() throws DataNotFoundException {
-        PatientData data = dataService.getPatientDataById(1);
+        PatientData add = new PatientData();
+        add.setPatientId(42);
+        dataService.save(add);
+
+        PatientData data = dataService.getPatientDataById(42);
         Assertions.assertNotNull(data);
+        Assertions.assertEquals(42, data.getPatientId());
     }
 
     @Test

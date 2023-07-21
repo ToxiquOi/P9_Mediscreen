@@ -5,9 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09cd5ea1-de94-4d27-8a2f-5353ab42e0d9" name="Changes" comment="Grant execute permission to Gradle wrapper">
+      <change afterPath="$PROJECT_DIR$/userdb/src/test/java/com/mediscreen/userdb/UserDbApplicationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userdb/src/test/java/com/mediscreen/userdb/UserServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userdb/src/test/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analytics/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/analytics/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analytics/src/main/java/com/mediscreen/analytics/service/ReportService.java" beforeDir="false" afterPath="$PROJECT_DIR$/analytics/src/main/java/com/mediscreen/analytics/service/ReportService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mediscreen-ui/vite.generated.ts" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen-ui/vite.generated.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doctordb/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/doctordb/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mediscreen-ui/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen-ui/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdb/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/userdb/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,13 +62,7 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="mediscreen" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="documentation" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="mediscreen" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="help" type="c8890929:TasksNode$1" />
+                <item name="build" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -87,43 +93,47 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Openclassroom/Java/P9_mediscreen/P9_Mediscreen/analytics&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;b8be9e8d1ff8b1ab585977e0160aed10&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "corretto-17",
+    "last_opened_file_path": "D:/Openclassroom/Java/P9_mediscreen/P9_Mediscreen/doctordb/gradle/wrapper",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15136719",
+    "project.structure.side.proportion": "0.48617512",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "spring.configuration.checksum": "b8be9e8d1ff8b1ab585977e0160aed10",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mongo&quot;,
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mongo",
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.mediscreen.doctordb.exception" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Openclassroom\Java\P9_mediscreen\P9_Mediscreen\doctordb\gradle\wrapper" />
+      <recent name="D:\Openclassroom\Java\P9_mediscreen\P9_Mediscreen\analytics\gradle\wrapper" />
+      <recent name="D:\Openclassroom\Java\P9_mediscreen\P9_Mediscreen\userdb\gradle\wrapper" />
       <recent name="D:\Openclassroom\Java\P9_mediscreen\P9_Mediscreen\analytics" />
-      <recent name="D:\Openclassroom\Java\P9_mediscreen\P9_Mediscreen\docker" />
       <recent name="D:\Openclassroom\Java\P9_mediscreen\P9_Mediscreen\mediscreen-ui" />
-      <recent name="D:\Openclassroom\Java\P9_mediscreen\P9_Mediscreen\analytics\src\main\java\com\mediscreen\analytics" />
-      <recent name="D:\Openclassroom\Java\P9_mediscreen\P9_Mediscreen\analytics\src\main\java\com\mediscreen\analytics\service" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.mediscreen.analytics.service" />
@@ -136,8 +146,8 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.P9_Mediscreen [resolvableConfigurations]">
-    <configuration name="P9_Mediscreen [init]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.P9_Mediscreen [build]">
+    <configuration name="P9_Mediscreen [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -148,7 +158,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="init" />
+            <option value="build" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -158,7 +168,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="P9_Mediscreen [javadoc]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="P9_Mediscreen [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -169,7 +179,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="javadoc" />
+            <option value="test" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -179,65 +189,74 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="P9_Mediscreen [projects]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Tests in 'mediscreen.userdb.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
+        <option name="env">
+          <map>
+            <entry key="DB_SERVER" value="localhost" />
+          </map>
+        </option>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="projects" />
+            <option value=":userdb:test" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="P9_Mediscreen [resolvableConfigurations]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="UserServiceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="resolvableConfigurations" />
+            <option value=":userdb:test" />
+            <option value="--tests" />
+            <option value="&quot;com.mediscreen.userdb.UserServiceTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="P9_Mediscreen [wrapper]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="UserServiceTest.testCreateUser" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="wrapper" />
+            <option value=":userdb:test" />
+            <option value="--tests" />
+            <option value="&quot;com.mediscreen.userdb.UserServiceTest.testCreateUser&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
@@ -300,11 +319,11 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Gradle.P9_Mediscreen [init]" />
-      <item itemvalue="Gradle.P9_Mediscreen [javadoc]" />
-      <item itemvalue="Gradle.P9_Mediscreen [projects]" />
-      <item itemvalue="Gradle.P9_Mediscreen [resolvableConfigurations]" />
-      <item itemvalue="Gradle.P9_Mediscreen [wrapper]" />
+      <item itemvalue="Gradle.UserServiceTest" />
+      <item itemvalue="Gradle.UserServiceTest.testCreateUser" />
+      <item itemvalue="Gradle.P9_Mediscreen [test]" />
+      <item itemvalue="Gradle.Tests in 'mediscreen.userdb.test'" />
+      <item itemvalue="Gradle.P9_Mediscreen [build]" />
       <item itemvalue="Spring Boot.AnalyticsApplication" />
       <item itemvalue="Spring Boot.AnalyticsApplication (1)" />
       <item itemvalue="Spring Boot.DoctordbApplication" />
@@ -313,11 +332,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.P9_Mediscreen [resolvableConfigurations]" />
-        <item itemvalue="Gradle.P9_Mediscreen [projects]" />
-        <item itemvalue="Gradle.P9_Mediscreen [javadoc]" />
-        <item itemvalue="Gradle.P9_Mediscreen [init]" />
-        <item itemvalue="Gradle.P9_Mediscreen [wrapper]" />
+        <item itemvalue="Gradle.P9_Mediscreen [build]" />
+        <item itemvalue="Gradle.P9_Mediscreen [test]" />
+        <item itemvalue="Gradle.UserServiceTest.testCreateUser" />
+        <item itemvalue="Gradle.Tests in 'mediscreen.userdb.test'" />
+        <item itemvalue="Gradle.UserServiceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -422,5 +441,9 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

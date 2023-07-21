@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class ReportService {
@@ -41,7 +42,7 @@ public class ReportService {
                 .filter(f -> patient.getHistory()
                                 .stream()
                                 .anyMatch(s-> s.contains(f.getValue()))
-                ).toList();
+                ).collect(Collectors.toList());
     }
 
     private DiabeteState evaluateState(DiabeteReport report) {
@@ -52,38 +53,24 @@ public class ReportService {
         if(nbFactors == 0) return DiabeteState.NONE;
         if(age >= 30) {
             switch (nbFactors) {
-                case 2 -> {
-                    return DiabeteState.BODERLINE;
-                }
-                case 6 -> {
-                    return DiabeteState.DANGER;
-                }
-                case 8 -> {
-                    return DiabeteState.EARLY;
-                }
-                default -> {}
+                case 2: return DiabeteState.BODERLINE;
+                case 6: return DiabeteState.DANGER;
+                case 8: return DiabeteState.EARLY;
+                default:break;
             }
         }
         else {
             if(sex.equals("H")) {
                 switch (nbFactors) {
-                    case 3 -> {
-                        return DiabeteState.DANGER;
-                    }
-                    case 5 -> {
-                        return DiabeteState.EARLY;
-                    }
-                    default -> {}
+                    case 3: return DiabeteState.DANGER;
+                    case 5: return DiabeteState.EARLY;
+                    default: break;
                 }
             } else {
                 switch (nbFactors) {
-                    case 4 -> {
-                        return DiabeteState.DANGER;
-                    }
-                    case 7 -> {
-                        return DiabeteState.EARLY;
-                    }
-                    default -> {}
+                    case 4: return DiabeteState.DANGER;
+                    case 7: return DiabeteState.EARLY;
+                    default: break;
                 }
             }
         }

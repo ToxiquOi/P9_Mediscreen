@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09cd5ea1-de94-4d27-8a2f-5353ab42e0d9" name="Changes" comment="Add jacoco to all subprojects">
+    <list default="true" id="09cd5ea1-de94-4d27-8a2f-5353ab42e0d9" name="Changes" comment="Test userdb">
+      <change afterPath="$PROJECT_DIR$/doctordb/src/test/java/com/mediscreen/doctordb/PatientDataServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doctordb/src/test/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdb/src/main/java/com/mediscreen/userdb/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/userdb/src/main/java/com/mediscreen/userdb/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdb/src/main/java/com/mediscreen/userdb/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/userdb/src/main/java/com/mediscreen/userdb/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdb/src/test/java/com/mediscreen/userdb/UserDbApplicationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/userdb/src/test/java/com/mediscreen/userdb/UserDbApplicationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdb/src/test/java/com/mediscreen/userdb/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/userdb/src/test/java/com/mediscreen/userdb/UserServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analytics/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/analytics/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doctordb/src/test/java/com/mediscreen/doctordb/DoctordbApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/doctordb/src/test/java/com/mediscreen/doctordb/DoctordbApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +83,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "corretto-17",
-    "last_opened_file_path": "D:/Openclassroom/Java/P9_mediscreen/P9_Mediscreen/doctordb/gradle/wrapper",
+    "last_opened_file_path": "D:/Openclassroom/Java/P9_mediscreen/P9_Mediscreen/doctordb/src/test/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -108,11 +108,11 @@
       <recent name="com.mediscreen.doctordb.exception" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Openclassroom\Java\P9_mediscreen\P9_Mediscreen\doctordb\src\test\resources" />
       <recent name="D:\Openclassroom\Java\P9_mediscreen\P9_Mediscreen\doctordb\gradle\wrapper" />
       <recent name="D:\Openclassroom\Java\P9_mediscreen\P9_Mediscreen\analytics\gradle\wrapper" />
       <recent name="D:\Openclassroom\Java\P9_mediscreen\P9_Mediscreen\userdb\gradle\wrapper" />
       <recent name="D:\Openclassroom\Java\P9_mediscreen\P9_Mediscreen\analytics" />
-      <recent name="D:\Openclassroom\Java\P9_mediscreen\P9_Mediscreen\mediscreen-ui" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.mediscreen.analytics.service" />
@@ -125,7 +125,30 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.UserServiceTest">
+  <component name="RunManager" selected="Gradle.PatientDataServiceTest">
+    <configuration name="DoctordbApplicationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":doctordb:test" />
+            <option value="--tests" />
+            <option value="&quot;com.mediscreen.doctordb.DoctordbApplicationTests&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="P9_Mediscreen [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -147,34 +170,8 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="P9_Mediscreen [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PatientDataServiceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="Tests in 'mediscreen.userdb.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="env">
-          <map>
-            <entry key="DB_SERVER" value="localhost" />
-          </map>
-        </option>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
@@ -184,7 +181,32 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value=":userdb:test" />
+            <option value=":doctordb:test" />
+            <option value="--tests" />
+            <option value="&quot;com.mediscreen.doctordb.PatientDataServiceTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="PatientDataServiceTest.getPatientDataTest3" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":doctordb:test" />
+            <option value="--tests" />
+            <option value="&quot;com.mediscreen.doctordb.PatientDataServiceTest.getPatientDataTest3&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -216,14 +238,6 @@
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
-    </configuration>
-    <configuration name="All in mediscreen" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mediscreen" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
     </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="analytics" />
@@ -283,11 +297,11 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Gradle.DoctordbApplicationTests" />
+      <item itemvalue="Gradle.PatientDataServiceTest" />
+      <item itemvalue="Gradle.PatientDataServiceTest.getPatientDataTest3" />
       <item itemvalue="Gradle.UserServiceTest" />
-      <item itemvalue="Gradle.P9_Mediscreen [test]" />
-      <item itemvalue="Gradle.Tests in 'mediscreen.userdb.test'" />
       <item itemvalue="Gradle.P9_Mediscreen [build]" />
-      <item itemvalue="JUnit.All in mediscreen" />
       <item itemvalue="Spring Boot.AnalyticsApplication" />
       <item itemvalue="Spring Boot.AnalyticsApplication (1)" />
       <item itemvalue="Spring Boot.DoctordbApplication" />
@@ -296,11 +310,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.PatientDataServiceTest" />
+        <item itemvalue="Gradle.PatientDataServiceTest.getPatientDataTest3" />
+        <item itemvalue="Gradle.DoctordbApplicationTests" />
         <item itemvalue="Gradle.UserServiceTest" />
         <item itemvalue="Gradle.P9_Mediscreen [build]" />
-        <item itemvalue="Gradle.Tests in 'mediscreen.userdb.test'" />
-        <item itemvalue="JUnit.All in mediscreen" />
-        <item itemvalue="Gradle.P9_Mediscreen [test]" />
       </list>
     </recent_temporary>
   </component>
@@ -442,7 +456,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689941295658</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Test userdb">
+      <created>1689942943447</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1689942943447</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -461,7 +482,8 @@
     <MESSAGE value="Add mysql service in workflow" />
     <MESSAGE value="Add jacoco to all projects" />
     <MESSAGE value="Add jacoco to all subprojects" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add jacoco to all subprojects" />
+    <MESSAGE value="Test userdb" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test userdb" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -24,7 +24,7 @@ public class UserDbApplicationTest {
     }
 
     @Test
-    public void contextLoad() {
+    void contextLoad() {
         Assertions.assertNotNull(userRepository);
         Assertions.assertNotNull(userService);
         Assertions.assertNotNull(userController);

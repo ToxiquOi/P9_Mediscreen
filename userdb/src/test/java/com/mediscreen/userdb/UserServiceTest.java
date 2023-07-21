@@ -30,7 +30,7 @@ public class UserServiceTest {
 
     @Test
     @Order(1)
-    public void testAddUser1() {
+    void testAddUser1() {
         User u = userService.addUser("test","10-12-1997", ESex.M, "test", "test");
         Assertions.assertNotNull(u);
         Assertions.assertEquals(userRepository.count(),u.getId());

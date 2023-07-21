@@ -25,7 +25,7 @@ public class PatientDataServiceTest {
     }
 
     @Test
-    public void getPatientDataTest3() throws DataNotFoundException {
+    void getPatientDataTest3() throws DataNotFoundException {
         PatientData add = new PatientData();
         add.setPatientId(42);
         dataService.save(add);
@@ -36,7 +36,7 @@ public class PatientDataServiceTest {
     }
 
     @Test
-    public void savePatientDataTest1() {
+    void savePatientDataTest1() {
         PatientData data = new PatientData();
         data.setPatientId(1);
         data = dataService.save(data);
@@ -45,14 +45,14 @@ public class PatientDataServiceTest {
     }
 
     @Test
-    public void addPatientDataTest2() {
+    void addPatientDataTest2() {
         PatientData data = dataService.addHistory(1,"toto");
         Assertions.assertNotNull(data);
         Assertions.assertEquals(1, data.getPatientHistory().size());
     }
 
     @Test
-    public void getPatientDataTest4() {
+    void getPatientDataTest4() {
         Assertions.assertThrows(DataNotFoundException.class, ()-> dataService.getPatientDataById(666));
     }
 

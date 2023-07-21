@@ -12,7 +12,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 class DoctordbApplicationTests {
 
     @Autowired
-    PatientDataController patientDataController;
+    private PatientDataController patientDataController;
 
     @Autowired
     private PatientDataRepository patientDataRepository;

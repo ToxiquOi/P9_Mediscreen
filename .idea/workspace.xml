@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09cd5ea1-de94-4d27-8a2f-5353ab42e0d9" name="Changes" comment="update workspace.xml">
-      <change beforePath="$PROJECT_DIR$/userdb/src/test/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/userdb/src/test/resources/application.properties" afterDir="false" />
+    <list default="true" id="09cd5ea1-de94-4d27-8a2f-5353ab42e0d9" name="Changes" comment="Fix: userdb test properties">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doctordb/src/test/java/com/mediscreen/doctordb/DoctordbApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/doctordb/src/test/java/com/mediscreen/doctordb/DoctordbApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doctordb/src/test/java/com/mediscreen/doctordb/PatientDataServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/doctordb/src/test/java/com/mediscreen/doctordb/PatientDataServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdb/src/test/java/com/mediscreen/userdb/UserDbApplicationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/userdb/src/test/java/com/mediscreen/userdb/UserDbApplicationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdb/src/test/java/com/mediscreen/userdb/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/userdb/src/test/java/com/mediscreen/userdb/UserServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -494,7 +498,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689945189473</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Fix: userdb test properties">
+      <created>1689945423583</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1689945423583</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -518,7 +529,8 @@
     <MESSAGE value="Add Mongo container to workflow" />
     <MESSAGE value="Add BeforeEach in doctordbTest" />
     <MESSAGE value="update workspace.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="update workspace.xml" />
+    <MESSAGE value="Fix: userdb test properties" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix: userdb test properties" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -36,7 +36,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        run: ./gradlew build sonar -Dsonar.projectKey=ToxiquOi_P9_Mediscreen -Dsonar.organization=toxiquoi
+        run: chmod -x ./gradlew && ./gradlew build sonar -Dsonar.projectKey=ToxiquOi_P9_Mediscreen -Dsonar.organization=toxiquoi
       - name: Deploy artifact
         uses: actions/upload-artifact@v3
         with:

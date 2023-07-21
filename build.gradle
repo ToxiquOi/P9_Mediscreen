@@ -1,12 +1,35 @@
-plugins {
-    id 'java'
-}
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'jacoco'
+apply plugin: 'org.sonarqube'
 
 group 'com.mediscreen'
 version '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
+}
+
+buildscript {
+    repositories {
+        mavenCentral()
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+    dependencies {
+        classpath "org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:3.5.0.2730"
+    }
+}
+
+
+sonar {
+    properties {
+        property "sonar.projectKey", "ToxiquOi_P9_Mediscreen"
+        property "sonar.organization", "toxiquoi"
+        property "sonar.host.url", "https://sonarcloud.io"
+    }
 }
 
 dependencies {

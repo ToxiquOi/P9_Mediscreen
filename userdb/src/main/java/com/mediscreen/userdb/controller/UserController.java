@@ -59,7 +59,7 @@ public class UserController {
     }
 
     @ExceptionHandler({UserNotFoundException.class})
-    public ResponseEntity<String> UserNotFoundHandler(UserNotFoundException e) {
+    public ResponseEntity<String> userNotFoundHandler(UserNotFoundException e) {
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body(e.getMessage());
     }
 }

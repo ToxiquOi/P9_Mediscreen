@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09cd5ea1-de94-4d27-8a2f-5353ab42e0d9" name="Changes" comment="Fix: userdb test properties">
+    <list default="true" id="09cd5ea1-de94-4d27-8a2f-5353ab42e0d9" name="Changes" comment="Cleanup">
+      <change afterPath="$PROJECT_DIR$/userdb/src/test/java/com/mediscreen/userdb/UserControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doctordb/src/test/java/com/mediscreen/doctordb/DoctordbApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/doctordb/src/test/java/com/mediscreen/doctordb/DoctordbApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doctordb/src/test/java/com/mediscreen/doctordb/PatientDataServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/doctordb/src/test/java/com/mediscreen/doctordb/PatientDataServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdb/src/test/java/com/mediscreen/userdb/UserDbApplicationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/userdb/src/test/java/com/mediscreen/userdb/UserDbApplicationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdb/src/test/java/com/mediscreen/userdb/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/userdb/src/test/java/com/mediscreen/userdb/UserServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdb/src/main/java/com/mediscreen/userdb/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/userdb/src/main/java/com/mediscreen/userdb/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdb/src/test/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/userdb/src/test/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +41,11 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="mediscreen" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="mediscreen" type="f1a62948:ProjectNode" />
+                <item name="userdb" type="2d1252cf:ModuleNode" />
               </path>
             </expand>
             <select />
@@ -125,51 +129,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.UserServiceTest">
-    <configuration name="DoctordbApplicationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":doctordb:test" />
-            <option value="--tests" />
-            <option value="&quot;com.mediscreen.doctordb.DoctordbApplicationTests&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="P9_Mediscreen [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="build" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Gradle.UserControllerTest">
     <configuration name="PatientDataServiceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -207,6 +167,52 @@
             <option value=":doctordb:test" />
             <option value="--tests" />
             <option value="&quot;com.mediscreen.doctordb.PatientDataServiceTest.getPatientDataTest3&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="UserControllerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":userdb:test" />
+            <option value="--tests" />
+            <option value="&quot;com.mediscreen.userdb.UserControllerTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="UserControllerTest.getByFamilyNameTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":userdb:test" />
+            <option value="--tests" />
+            <option value="&quot;com.mediscreen.userdb.UserControllerTest.getByFamilyNameTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -297,11 +303,11 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Gradle.DoctordbApplicationTests" />
       <item itemvalue="Gradle.PatientDataServiceTest" />
       <item itemvalue="Gradle.PatientDataServiceTest.getPatientDataTest3" />
+      <item itemvalue="Gradle.UserControllerTest" />
+      <item itemvalue="Gradle.UserControllerTest.getByFamilyNameTest" />
       <item itemvalue="Gradle.UserServiceTest" />
-      <item itemvalue="Gradle.P9_Mediscreen [build]" />
       <item itemvalue="Spring Boot.AnalyticsApplication" />
       <item itemvalue="Spring Boot.AnalyticsApplication (1)" />
       <item itemvalue="Spring Boot.DoctordbApplication" />
@@ -310,11 +316,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.UserControllerTest" />
+        <item itemvalue="Gradle.UserControllerTest.getByFamilyNameTest" />
         <item itemvalue="Gradle.UserServiceTest" />
         <item itemvalue="Gradle.PatientDataServiceTest" />
         <item itemvalue="Gradle.PatientDataServiceTest.getPatientDataTest3" />
-        <item itemvalue="Gradle.DoctordbApplicationTests" />
-        <item itemvalue="Gradle.P9_Mediscreen [build]" />
       </list>
     </recent_temporary>
   </component>
@@ -505,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689945423583</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Cleanup">
+      <created>1689945796713</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1689945796713</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -530,7 +543,8 @@
     <MESSAGE value="Add BeforeEach in doctordbTest" />
     <MESSAGE value="update workspace.xml" />
     <MESSAGE value="Fix: userdb test properties" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix: userdb test properties" />
+    <MESSAGE value="Cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleanup" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

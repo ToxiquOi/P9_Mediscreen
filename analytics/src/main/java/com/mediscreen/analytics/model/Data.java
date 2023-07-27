@@ -4,16 +4,8 @@ import java.util.HashMap;
 import java.util.List;
 
 public class Data extends HashMap<String, Object> {
-
-    public int getId() {
-        return (int) get("patientId");
-    }
-
+    private static final String HIST_KEY = "patientHistory";
     public List<String> getHistory() {
-        return (List<String>) get("patientHistory");
-    }
-    public void setHistory(List<String> history) {
-        if(containsKey("patientHistory")) replace("patientHistory", history);
-        else put("patientHistory", history);
+        return (List<String>) get(HIST_KEY);
     }
 }

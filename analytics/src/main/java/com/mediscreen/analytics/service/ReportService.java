@@ -37,7 +37,7 @@ public class ReportService {
         return report;
     }
 
-    private List<DiabeteFactor> collectFactors(Patient patient) {
+    public List<DiabeteFactor> collectFactors(Patient patient) {
         return Arrays.stream(DiabeteFactor.values())
                 .filter(f -> patient.getHistory()
                                 .stream()
@@ -45,7 +45,7 @@ public class ReportService {
                 ).collect(Collectors.toList());
     }
 
-    private DiabeteState evaluateState(DiabeteReport report) {
+    public DiabeteState evaluateState(DiabeteReport report) {
         int nbFactors = report.getFactors().size();
         long age = report.getAge();
         String sex = report.getPatient().getSex();

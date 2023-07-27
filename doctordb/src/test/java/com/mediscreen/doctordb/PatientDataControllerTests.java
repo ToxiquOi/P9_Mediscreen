@@ -16,7 +16,7 @@ import static org.mockito.ArgumentMatchers.*;
 import static org.mockito.Mockito.when;
 
 @SpringBootTest
-public class PatientDataControllerTests {
+class PatientDataControllerTests {
 
     @Mock
     PatientDataService dataService;

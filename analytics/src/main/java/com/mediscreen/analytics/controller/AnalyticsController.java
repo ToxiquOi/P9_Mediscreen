@@ -40,7 +40,7 @@ public class AnalyticsController {
     }
 
     @ExceptionHandler({HistoryNotFoundException.class, PatientNotFoundException.class})
-    public ResponseEntity<String> NotFoundExceptionHandler(Exception e) {
+    public ResponseEntity<String> notFoundExceptionHandler(Exception e) {
         return ResponseEntity
                 .status(HttpStatus.NOT_FOUND)
                 .body(e.getMessage());

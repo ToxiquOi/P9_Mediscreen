@@ -27,7 +27,7 @@ public class PatientDataControllerTests {
 
     @Test
     void getPatientDataByIdTest() throws DataNotFoundException {
-        when(dataService.getPatientDataById(any()))
+        when(dataService.getPatientDataById(anyInt()))
                 .thenReturn(new PatientData());
 
         ResponseEntity<PatientData> rs = dataController.getPatientDataById(1);
@@ -40,7 +40,7 @@ public class PatientDataControllerTests {
         when(dataService.addHistory(anyInt(), anyString()))
                 .thenReturn(new PatientData());
 
-        ResponseEntity<PatientData> rs = dataController.getPatientDataById(1);
+        ResponseEntity<PatientData> rs = dataController.addHistory(1, "test");
         Assertions.assertNotNull(rs.getBody());
         Assertions.assertEquals(HttpStatus.OK, rs.getStatusCode());
     }

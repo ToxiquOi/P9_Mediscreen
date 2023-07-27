@@ -52,14 +52,6 @@ public abstract class AbstractUserForm extends FormLayout {
         binder.readBean(patient);
     }
 
-    public void setFormReadOnly(boolean enabled) {
-        getFirstname().setReadOnly(enabled);
-        getLastname().setReadOnly(enabled);
-        getDob().setReadOnly(enabled);
-        getFamily().setReadOnly(enabled);
-        getSex().setReadOnly(enabled);
-    }
-
     public void setFieldFullWidth() {
         dob.setWidthFull();
         sex.setWidthFull();
@@ -73,7 +65,7 @@ public abstract class AbstractUserForm extends FormLayout {
             binder.writeBean(patient);
             fireEvent(createSaveEvent());
         } catch (ValidationException e) {
-            e.printStackTrace();
+            System.out.println(e.getMessage());
         }
     }
 

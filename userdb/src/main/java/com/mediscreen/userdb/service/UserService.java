@@ -9,7 +9,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 
-
+import java.time.LocalDateTime;
+import java.time.ZoneOffset;
 import java.util.Date;
 import java.util.List;
 
@@ -38,7 +39,11 @@ public class UserService {
 
         User user = new User();
         user.setFamily(family);
-        user.setDob(new Date(Integer.parseInt(birthdate[0]), Integer.parseInt(birthdate[1])-1, Integer.parseInt(birthdate[2])));
+        user.setDob(Date.from(
+                LocalDateTime.of(
+                        Integer.parseInt(birthdate[0]), Integer.parseInt(birthdate[1])-1, Integer.parseInt(birthdate[2]), 0, 0
+                ).toInstant(ZoneOffset.UTC))
+        );
         user.setSex(sex.getValue());
         user.setAddress(address);
         user.setPhone(phone);

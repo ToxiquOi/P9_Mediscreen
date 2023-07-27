@@ -4,10 +4,12 @@ import com.mediscreen.analytics.domain.DiabeteFactor;
 import com.mediscreen.analytics.domain.DiabeteReport;
 import com.mediscreen.analytics.domain.DiabeteState;
 import com.mediscreen.analytics.model.Patient;
+import com.mediscreen.analytics.service.PatientDBService;
 import com.mediscreen.analytics.service.ReportService;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
+import org.mockito.Mock;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.time.LocalDateTime;
@@ -15,8 +17,14 @@ import java.time.ZoneOffset;
 import java.util.*;
 import java.util.stream.Collectors;
 
+import static org.mockito.ArgumentMatchers.anyInt;
+import static org.mockito.Mockito.when;
+
 @SpringBootTest
 public class ReportServiceTests {
+
+    @Mock
+    PatientDBService patientDBService;
 
     @InjectMocks
     ReportService reportService;
@@ -157,6 +165,37 @@ public class ReportServiceTests {
         Assertions.assertEquals(DiabeteState.EARLY, reportService.evaluateState(r));
     }
 
+    @Test
+    void getReportUsingIdTest() {
+        Patient p = getPatientW();
+        p.setHistory(Arrays.stream(DiabeteFactor.values())
+                .limit(8)
+                .map(DiabeteFactor::getValue)
+                .collect(Collectors.toList()));
+        when(patientDBService.getPatientById(anyInt()))
+                .thenReturn(p);
+
+        DiabeteReport r = reportService.getReportUsingId(1);
+        Assertions.assertNotNull(r);
+        Assertions.assertEquals(8, r.getFactors().size());
+        Assertions.assertEquals(DiabeteState.NONE, r.getDiagnostic());
+    }
+
+    @Test
+    void getReportUsingFamilyTest() {
+        Patient p = getPatientH();
+        p.setHistory(Arrays.stream(DiabeteFactor.values())
+                .limit(2)
+                .map(DiabeteFactor::getValue)
+                .collect(Collectors.toList()));
+        when(patientDBService.getPatientById(anyInt()))
+                .thenReturn(p);
+
+        DiabeteReport r = reportService.getReportUsingId(1);
+        Assertions.assertNotNull(r);
+        Assertions.assertEquals(2, r.getFactors().size());
+        Assertions.assertEquals(DiabeteState.NONE, r.getDiagnostic());
+    }
 
     Patient getPatient30() {
         Patient p = new Patient();

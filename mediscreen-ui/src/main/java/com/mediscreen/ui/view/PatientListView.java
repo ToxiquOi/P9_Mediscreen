@@ -30,10 +30,7 @@ public class PatientListView extends VerticalLayout {
         this.patientService = patientService;
         this.doctorDBService = doctorDBService;
 
-        Button getAllBtn = new Button("Get all patients");
-        getAllBtn.addClickListener(this::onAllPatientClick);
-
-        add(getToolbar(), getContent(), getAllBtn);
+        add(getToolbar(), getContent());
     }
 
     private HorizontalLayout getToolbar() {
@@ -83,10 +80,6 @@ public class PatientListView extends VerticalLayout {
         grid.asSingleSelect().addValueChangeListener(event -> editContact(event.getValue()));
 
         return grid;
-    }
-
-    public void onAllPatientClick(ClickEvent<Button> event) {
-        patientService.getPatientById(1);
     }
 
     private void updateGrid() {

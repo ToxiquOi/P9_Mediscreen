@@ -11,6 +11,7 @@ public class MainView extends AppLayout {
 
     public MainView() {
         createHeader();
+        setPrimarySection(Section.DRAWER);
     }
 
     private void createHeader() {

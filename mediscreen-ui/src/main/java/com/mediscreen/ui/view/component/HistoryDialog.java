@@ -54,6 +54,8 @@ public class HistoryDialog extends Dialog {
             }
         });
         HorizontalLayout layout = new HorizontalLayout(textArea, send);
+        layout.setFlexGrow(3, textArea);
+        layout.setWidthFull();
         return layout;
     }
 

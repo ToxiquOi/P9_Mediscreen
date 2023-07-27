@@ -41,7 +41,7 @@ public class UserService {
         user.setFamily(family);
         user.setDob(Date.from(
                 LocalDateTime.of(
-                        Integer.parseInt(birthdate[0]), Integer.parseInt(birthdate[1])-1, Integer.parseInt(birthdate[2]), 0, 0
+                        Integer.parseInt(birthdate[2]), Integer.parseInt(birthdate[1])-1, Integer.parseInt(birthdate[0]), 0, 0
                 ).toInstant(ZoneOffset.UTC))
         );
         user.setSex(sex.getValue());

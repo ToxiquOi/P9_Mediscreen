@@ -1,13 +1,4 @@
-FROM eclipse-temurin:17-jdk-jammy
-
-
-WORKDIR /mediscreen-ui
-COPY . /mediscreen-ui/
-USER root
-CMD ["chown", "-R", "/mediscreen-ui"]
-
-RUN chmod +X /mediscreen-ui/gradlew
-CMD ["/mediscreen-ui/gradlew", "clean", "build", "jar"]
-
-EXPOSE 8081/tcp
-CMD ["java", "-jar", "/mediscreen/build/libs/mediscreen-ui-0.0.1-SNAPSHOT.jar"]
+FROM openjdk:17-jdk-slim
+COPY build/libs/*.jar ./
+EXPOSE 8080
+ENTRYPOINT ["java", "-jar", "./mediscreen-ui-0.0.1-SNAPSHOT.jar"]

@@ -1,0 +1,15 @@
+# Use root/example as user/password credentials
+version: '3.1'
+
+services:
+  mediscreen-ui-app:
+    build:
+      context: ../
+      dockerfile: DockerFile
+    container_name: mediscreen-ui-app
+    ports:
+      - "8080:8080"
+    environment:
+      - DOCTOR_SERVICE=mediscreen-doctordb-app
+      - PATIENT_SERVICE=mediscreen-userdb-app
+      - ANALYTICS_SERVICE=mediscreen-analytics-app

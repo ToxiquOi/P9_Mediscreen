@@ -1,13 +1,5 @@
-FROM eclipse-temurin:17-jdk-jammy
-
-
-WORKDIR /userdb
-COPY . /userdb/
+FROM openjdk:17-jdk-slim
 USER root
-CMD ["chown", "-R", "/userdb"]
-
-RUN chmod +X /userdb/gradlew
-CMD ["/userdb/gradlew", "clean", "build", "jar"]
-
+COPY build/libs/*.jar ./
 EXPOSE 8081/tcp
-CMD ["java", "-jar", "/userdb/build/libs/userdb-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["java", "-jar", "./userdb-0.0.1-SNAPSHOT.jar"]

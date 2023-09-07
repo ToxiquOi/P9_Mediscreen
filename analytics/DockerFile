@@ -9,5 +9,5 @@ CMD ["chown", "-R", "/analytics"]
 RUN chmod +X /analytics/gradlew
 CMD ["/analytics/gradlew", "clean", "build", "jar"]
 
-EXPOSE 8081/tcp
+EXPOSE 8083/tcp
 CMD ["java", "-jar", "/analytics/build/libs/analytics-0.0.1-SNAPSHOT.jar"]

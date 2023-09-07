@@ -24,6 +24,10 @@ ext {
 	set('vaadinVersion', "23.3.11")
 }
 
+vaadin {
+	productionMode true
+}
+
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'com.vaadin:vaadin-spring-boot-starter'

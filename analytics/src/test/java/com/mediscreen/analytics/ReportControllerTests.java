@@ -27,7 +27,7 @@ import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.Mockito.when;
 
 @SpringBootTest
-public class ReportControllerTests {
+class ReportControllerTests {
 
     Pattern rsPattern = Pattern.compile("Patient: (.*[^ ])? (.*[^ ])? [(]age (\\d*[^)])?[)] diabetes assessment is: .*");
 

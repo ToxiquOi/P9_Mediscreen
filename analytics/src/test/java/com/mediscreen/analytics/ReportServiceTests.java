@@ -21,7 +21,7 @@ import static org.mockito.ArgumentMatchers.anyInt;
 import static org.mockito.Mockito.when;
 
 @SpringBootTest
-public class ReportServiceTests {
+class ReportServiceTests {
 
     @Mock
     PatientDBService patientDBService;

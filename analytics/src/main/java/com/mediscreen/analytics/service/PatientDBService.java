@@ -1,5 +1,6 @@
 package com.mediscreen.analytics.service;
 
+import com.mediscreen.analytics.config.AppProperties;
 import com.mediscreen.analytics.exception.PatientNotFoundException;
 import com.mediscreen.analytics.model.Patient;
 import lombok.SneakyThrows;
@@ -16,14 +17,15 @@ import java.util.List;
 @Service
 public class PatientDBService {
 
-    private final static String SERVICE_URI = "http://localhost:8081/patient/";
+    private final String SERVICE_URI;
     private final WebRequestService wrs;
     private final DoctorDBService ddbservice;
 
     @Autowired
-    public PatientDBService(WebRequestService webRequestService, DoctorDBService ddbservice) {
+    public PatientDBService(WebRequestService webRequestService, DoctorDBService ddbservice, AppProperties props) {
         this.wrs = webRequestService;
         this.ddbservice = ddbservice;
+        SERVICE_URI = props.getPatientServiceURIString() + "/patient/";
     }
 
     @SneakyThrows

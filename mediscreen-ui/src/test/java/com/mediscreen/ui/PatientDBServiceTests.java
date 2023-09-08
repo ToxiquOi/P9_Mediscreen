@@ -1,5 +1,6 @@
 package com.mediscreen.ui;
 
+import com.mediscreen.ui.config.AppProperties;
 import com.mediscreen.ui.exception.PatientNotFoundException;
 import com.mediscreen.ui.domain.Patient;
 import com.mediscreen.ui.service.DoctorDBService;
@@ -18,7 +19,10 @@ import static org.mockito.ArgumentMatchers.*;
 import static org.mockito.Mockito.when;
 
 @SpringBootTest
-public class PatientDBServiceTests {
+class PatientDBServiceTests {
+
+    @Mock
+    AppProperties props;
 
     @Mock
     WebRequestService webRequestService;

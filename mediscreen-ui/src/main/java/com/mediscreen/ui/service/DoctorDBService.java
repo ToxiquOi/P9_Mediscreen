@@ -1,5 +1,6 @@
 package com.mediscreen.ui.service;
 
+import com.mediscreen.ui.config.AppProperties;
 import com.mediscreen.ui.domain.Patient;
 import com.mediscreen.ui.exception.HistorySaveException;
 import com.mediscreen.ui.model.Data;
@@ -17,12 +18,13 @@ import java.util.List;
 @Service
 public class DoctorDBService {
 
-    private final static String SERVICE_URI = "http://localhost:8082/patHistory/";
+    private final String SERVICE_URI;
     private final WebRequestService wrs;
 
     @Autowired
-    public DoctorDBService(WebRequestService wrs) {
+    public DoctorDBService(WebRequestService wrs, AppProperties props) {
         this.wrs = wrs;
+        SERVICE_URI = props.getDoctorServiceURIString() + "/patHistory/";
     }
 
 

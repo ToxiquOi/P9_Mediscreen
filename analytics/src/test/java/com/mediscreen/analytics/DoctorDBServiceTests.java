@@ -1,5 +1,6 @@
 package com.mediscreen.analytics;
 
+import com.mediscreen.analytics.config.AppProperties;
 import com.mediscreen.analytics.model.Data;
 import com.mediscreen.analytics.service.DoctorDBService;
 import com.mediscreen.analytics.service.WebRequestService;
@@ -18,8 +19,10 @@ import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.Mockito.when;
 
 @SpringBootTest
-public class DoctorDBServiceTests {
-
+class DoctorDBServiceTests {
+    @Mock
+    AppProperties props;
+    
     @Mock
     WebRequestService webRequestService;
 

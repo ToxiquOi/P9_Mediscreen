@@ -1,4 +1,5 @@
 package com.mediscreen.ui.service;
+import com.mediscreen.ui.config.AppProperties;
 import com.mediscreen.ui.exception.PatientNotFoundException;
 import com.mediscreen.ui.exception.PatientSaveException;
 import com.mediscreen.ui.model.PatientList;
@@ -14,14 +15,15 @@ import java.util.List;
 @Service
 public class PatientDBService {
 
-    private final static String SERVICE_URI = "http://localhost:8081/patient/";
+    private final  String SERVICE_URI;
     private final WebRequestService wrs;
     private final DoctorDBService ddbservice;
 
     @Autowired
-    public PatientDBService(WebRequestService webRequestService, DoctorDBService ddbservice) {
+    public PatientDBService(WebRequestService webRequestService, DoctorDBService ddbservice, AppProperties props) {
         this.wrs = webRequestService;
         this.ddbservice = ddbservice;
+        SERVICE_URI = props.getPatientServiceURIString() + "/patient/";
     }
 
     @SneakyThrows

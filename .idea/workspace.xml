@@ -5,9 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09cd5ea1-de94-4d27-8a2f-5353ab42e0d9" name="Changes" comment="Cleanup">
-      <change afterPath="$PROJECT_DIR$/userdb/src/test/java/com/mediscreen/userdb/UserControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analytics/src/main/java/com/mediscreen/analytics/config/AppProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analytics/src/test/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mediscreen-ui/src/main/java/com/mediscreen/ui/config/AppProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mediscreen-ui/src/test/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdb/src/main/java/com/mediscreen/userdb/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/userdb/src/main/java/com/mediscreen/userdb/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analytics/src/main/java/com/mediscreen/analytics/service/DoctorDBService.java" beforeDir="false" afterPath="$PROJECT_DIR$/analytics/src/main/java/com/mediscreen/analytics/service/DoctorDBService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analytics/src/main/java/com/mediscreen/analytics/service/PatientDBService.java" beforeDir="false" afterPath="$PROJECT_DIR$/analytics/src/main/java/com/mediscreen/analytics/service/PatientDBService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analytics/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/analytics/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analytics/src/test/java/com/mediscreen/analytics/AnalyticsApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/analytics/src/test/java/com/mediscreen/analytics/AnalyticsApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analytics/src/test/java/com/mediscreen/analytics/DoctorDBServiceTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/analytics/src/test/java/com/mediscreen/analytics/DoctorDBServiceTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analytics/src/test/java/com/mediscreen/analytics/PatientDBServiceTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/analytics/src/test/java/com/mediscreen/analytics/PatientDBServiceTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analytics/src/test/java/com/mediscreen/analytics/ReportControllerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/analytics/src/test/java/com/mediscreen/analytics/ReportControllerTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analytics/src/test/java/com/mediscreen/analytics/ReportServiceTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/analytics/src/test/java/com/mediscreen/analytics/ReportServiceTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mediscreen-ui/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen-ui/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mediscreen-ui/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen-ui/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mediscreen-ui/src/main/java/com/mediscreen/ui/service/DoctorDBService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen-ui/src/main/java/com/mediscreen/ui/service/DoctorDBService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mediscreen-ui/src/main/java/com/mediscreen/ui/service/PatientDBService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen-ui/src/main/java/com/mediscreen/ui/service/PatientDBService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mediscreen-ui/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen-ui/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mediscreen-ui/src/test/java/com/mediscreen/ui/DoctorDBServiceTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen-ui/src/test/java/com/mediscreen/ui/DoctorDBServiceTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mediscreen-ui/src/test/java/com/mediscreen/ui/PatientDBServiceTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen-ui/src/test/java/com/mediscreen/ui/PatientDBServiceTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mediscreen-ui/vite.generated.ts" beforeDir="false" afterPath="$PROJECT_DIR$/mediscreen-ui/vite.generated.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdb/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/userdb/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/userdb/src/test/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/userdb/src/test/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,6 +54,9 @@
         <task path="$PROJECT_DIR$/mediscreen-ui">
           <activation />
         </task>
+        <task path="$PROJECT_DIR$/userdb">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -45,7 +67,45 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="mediscreen" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="mediscreen" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="mediscreen" type="f1a62948:ProjectNode" />
                 <item name="userdb" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="mediscreen" type="f1a62948:ProjectNode" />
+                <item name="userdb" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="mediscreen" type="f1a62948:ProjectNode" />
+                <item name="userdb" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="mediscreen" type="f1a62948:ProjectNode" />
+                <item name="userdb" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="other" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="mediscreen" type="f1a62948:ProjectNode" />
+                <item name="userdb" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="verification" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -87,7 +147,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "corretto-17",
-    "last_opened_file_path": "D:/Openclassroom/Java/P9_mediscreen/P9_Mediscreen/doctordb/src/test/resources",
+    "last_opened_file_path": "D:/Openclassroom/Java/P9_mediscreen/test/P9_Mediscreen/analytics/src/test",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -97,7 +157,7 @@
     "project.structure.proportion": "0.15136719",
     "project.structure.side.proportion": "0.48617512",
     "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
-    "spring.configuration.checksum": "b8be9e8d1ff8b1ab585977e0160aed10",
+    "spring.configuration.checksum": "f2f24a16fd201df2ba69dd26af04343b",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -112,11 +172,11 @@
       <recent name="com.mediscreen.doctordb.exception" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Openclassroom\Java\P9_mediscreen\test\P9_Mediscreen\analytics\src\test" />
+      <recent name="D:\Openclassroom\Java\P9_mediscreen\test\P9_Mediscreen\mediscreen-ui\src\test" />
+      <recent name="D:\Openclassroom\Java\P9_mediscreen\test\P9_Mediscreen\analytics\src\main\java\com\mediscreen\analytics" />
       <recent name="D:\Openclassroom\Java\P9_mediscreen\P9_Mediscreen\doctordb\src\test\resources" />
       <recent name="D:\Openclassroom\Java\P9_mediscreen\P9_Mediscreen\doctordb\gradle\wrapper" />
-      <recent name="D:\Openclassroom\Java\P9_mediscreen\P9_Mediscreen\analytics\gradle\wrapper" />
-      <recent name="D:\Openclassroom\Java\P9_mediscreen\P9_Mediscreen\userdb\gradle\wrapper" />
-      <recent name="D:\Openclassroom\Java\P9_mediscreen\P9_Mediscreen\analytics" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.mediscreen.analytics.service" />
@@ -129,49 +189,45 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.UserControllerTest">
-    <configuration name="PatientDataServiceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.P9_Mediscreen:userdb [test]">
+    <configuration name="P9_Mediscreen [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
+        <option name="scriptParameters" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value=":doctordb:test" />
-            <option value="--tests" />
-            <option value="&quot;com.mediscreen.doctordb.PatientDataServiceTest&quot;" />
+            <option value="build" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PatientDataServiceTest.getPatientDataTest3" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="P9_Mediscreen:userdb [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/userdb" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
+        <option name="scriptParameters" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value=":doctordb:test" />
-            <option value="--tests" />
-            <option value="&quot;com.mediscreen.doctordb.PatientDataServiceTest.getPatientDataTest3&quot;" />
+            <option value="test" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
@@ -303,8 +359,8 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Gradle.PatientDataServiceTest" />
-      <item itemvalue="Gradle.PatientDataServiceTest.getPatientDataTest3" />
+      <item itemvalue="Gradle.P9_Mediscreen [build]" />
+      <item itemvalue="Gradle.P9_Mediscreen:userdb [test]" />
       <item itemvalue="Gradle.UserControllerTest" />
       <item itemvalue="Gradle.UserControllerTest.getByFamilyNameTest" />
       <item itemvalue="Gradle.UserServiceTest" />
@@ -316,11 +372,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.P9_Mediscreen:userdb [test]" />
+        <item itemvalue="Gradle.P9_Mediscreen [build]" />
         <item itemvalue="Gradle.UserControllerTest" />
         <item itemvalue="Gradle.UserControllerTest.getByFamilyNameTest" />
         <item itemvalue="Gradle.UserServiceTest" />
-        <item itemvalue="Gradle.PatientDataServiceTest" />
-        <item itemvalue="Gradle.PatientDataServiceTest.getPatientDataTest3" />
       </list>
     </recent_temporary>
   </component>
@@ -342,6 +398,7 @@
       <workItem from="1689230834539" duration="14804000" />
       <workItem from="1689253825273" duration="4830000" />
       <workItem from="1689922734348" duration="866000" />
+      <workItem from="1694174346383" duration="1461000" />
     </task>
     <task id="LOCAL-00001" summary="Added REST api in doctorDb service">
       <created>1686824916729</created>
@@ -551,7 +608,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/mediscreen-ui/src/main/java/com/mediscreen/ui/service/PatientDBService.java</url>
-          <line>43</line>
+          <line>45</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>

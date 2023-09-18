@@ -1,3 +1,5 @@
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=ToxiquOi_P9_Mediscreen&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=ToxiquOi_P9_Mediscreen)
+
 # Mediscreen-services
 
 ## Description du repository

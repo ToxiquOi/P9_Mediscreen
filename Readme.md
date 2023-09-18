@@ -38,3 +38,11 @@ Détruire les images et container précedement créer:
 
 Lancer les applications:
 - docker-compose -f docker/compose.yml up --build --force-recreate
+
+# URL des applications
+- userdb: http://localhost:8081/swagger-ui/index.html
+- doctordb: http://localhost:8082/swagger-ui/index.html
+- analytics: http://localhost:8083/swagger-ui/index.html
+- mediscreen-ui: http://localhost:8080/swagger-ui/index.html
+
+

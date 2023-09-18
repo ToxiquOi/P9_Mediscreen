@@ -43,6 +43,6 @@ Lancer les applications:
 - userdb: http://localhost:8081/swagger-ui/index.html
 - doctordb: http://localhost:8082/swagger-ui/index.html
 - analytics: http://localhost:8083/swagger-ui/index.html
-- mediscreen-ui: http://localhost:8080/swagger-ui/index.html
+- mediscreen-ui: http://localhost:8080/patients
 
 

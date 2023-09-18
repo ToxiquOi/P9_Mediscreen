@@ -15,7 +15,7 @@ import java.util.List;
 @Service
 public class PatientDBService {
 
-    private final  String SERVICE_URI;
+    private final  String serviceURI;
     private final WebRequestService wrs;
     private final DoctorDBService ddbservice;
 
@@ -23,12 +23,12 @@ public class PatientDBService {
     public PatientDBService(WebRequestService webRequestService, DoctorDBService ddbservice, AppProperties props) {
         this.wrs = webRequestService;
         this.ddbservice = ddbservice;
-        SERVICE_URI = props.getPatientServiceURIString() + "/patient/";
+        serviceURI = props.getPatientServiceURIString() + "/patient/";
     }
 
     @SneakyThrows
     public Patient getPatientById(int id) {
-        var res = wrs.doGetRequest(SERVICE_URI+id, Patient.class);
+        var res = wrs.doGetRequest(serviceURI +id, Patient.class);
         if(res.isEmpty())
             throw new PatientNotFoundException("Patient with id: " + id + " not exist");
         var patient = res.get();
@@ -37,20 +37,20 @@ public class PatientDBService {
     }
 
     public List<Patient> getAllPatient() {
-        var res = wrs.doGetRequest(SERVICE_URI, PatientList.class);
+        var res = wrs.doGetRequest(serviceURI, PatientList.class);
         return res.isPresent() ? res.get() : new ArrayList<>();
     }
 
     @SneakyThrows
     public Patient savePatient(Patient p) {
-        var res = wrs.doPutRequest(SERVICE_URI+"save", p, Patient.class);
+        var res = wrs.doPutRequest(serviceURI +"save", p, Patient.class);
         if (res.isEmpty())
             throw new PatientSaveException();
         return res.get();
     }
 
     public void deleteUser(Patient patient) {
-        HttpDelete request = new HttpDelete(SERVICE_URI+patient.getId());
+        HttpDelete request = new HttpDelete(serviceURI +patient.getId());
         wrs.executeRequest(request, Object.class);
     }
 

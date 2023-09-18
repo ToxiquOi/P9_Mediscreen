@@ -17,7 +17,7 @@ import java.util.List;
 @Service
 public class PatientDBService {
 
-    private final String SERVICE_URI;
+    private final String serviceURI;
     private final WebRequestService wrs;
     private final DoctorDBService ddbservice;
 
@@ -25,12 +25,12 @@ public class PatientDBService {
     public PatientDBService(WebRequestService webRequestService, DoctorDBService ddbservice, AppProperties props) {
         this.wrs = webRequestService;
         this.ddbservice = ddbservice;
-        SERVICE_URI = props.getPatientServiceURIString() + "/patient/";
+        serviceURI = props.getPatientServiceURIString() + "/patient/";
     }
 
     @SneakyThrows
     public Patient getPatientById(int id) {
-        var res = wrs.doGetRequest(SERVICE_URI+id, Patient.class);
+        var res = wrs.doGetRequest(serviceURI +id, Patient.class);
         if(res.isEmpty())
             throw new PatientNotFoundException("Patient with id: " + id + " not exist");
         var patient = res.get();
@@ -42,7 +42,7 @@ public class PatientDBService {
     public Patient getPatientByFamilyName(String familyName) {
         List<NameValuePair> nameValuePairs = new ArrayList<>();
         nameValuePairs.add(new BasicNameValuePair("familyName", familyName));
-        URI uri = new URIBuilder(URI.create(SERVICE_URI+"familyName/"))
+        URI uri = new URIBuilder(URI.create(serviceURI +"familyName/"))
                 .addParameters(nameValuePairs)
                 .build();
 

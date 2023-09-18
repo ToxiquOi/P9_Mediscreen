@@ -12,17 +12,17 @@ import java.util.List;
 @Service
 public class DoctorDBService {
 
-    private final String SERVICE_URI;
+    private final String serviceURI;
     private final WebRequestService wrs;
 
     @Autowired
     public DoctorDBService(WebRequestService wrs, AppProperties props) {
         this.wrs = wrs;
-        SERVICE_URI = props.getDoctorServiceURIString() + "/patHistory/";
+        serviceURI = props.getDoctorServiceURIString() + "/patHistory/";
     }
 
     public List<String> getHistoryById(int id) {
-        var res = wrs.doGetRequest(SERVICE_URI+id, Data.class);
+        var res = wrs.doGetRequest(serviceURI +id, Data.class);
         if(res.isEmpty())
             return new ArrayList<>();
 

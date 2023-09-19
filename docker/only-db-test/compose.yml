@@ -2,9 +2,9 @@
 version: '3.1'
 
 services:
-  mediscreen-userdb-db:
+  mediscreen-userdb-db-test:
     image: mysql:8.0.27
-    container_name: mediscreen-userdb-db
+    container_name: mediscreen-userdb-db-test
     command: --default-authentication-plugin=mysql_native_password
     restart: always
     environment:
@@ -15,7 +15,8 @@ services:
     ports:
       - "3306:3306"
 
-  mediscreen-doctordb-db:
+  mediscreen-doctordb-db-test:
+    container_name: mediscreen-doctordb-db-test
     image: mongo
     restart: always
     environment:
